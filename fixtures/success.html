@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="ctl00_Head">
+    <link href="../App_Themes/aflgiftcards/button/style.css" type="text/css" rel="stylesheet" />
+    <link href="../App_Themes/aflgiftcards/css/styles.css" type="text/css" rel="stylesheet" />
+    <link href="../App_Themes/aflgiftcards/css/styles_log.css" type="text/css" rel="stylesheet" />
+    <link href="../App_Themes/aflgiftcards/Default.css" type="text/css" rel="stylesheet" />
+    <link href="../App_Themes/aflgiftcards/grid/styles.css" type="text/css" rel="stylesheet" />
+    <link href="../App_Themes/aflgiftcards/input/style.css" type="text/css" rel="stylesheet" />
+    <link href="../App_Themes/aflgiftcards/menu/style.css" type="text/css" rel="stylesheet" />
+    <link href="../App_Themes/aflgiftcards/navbar/style.css" type="text/css" rel="stylesheet" />
+    <link href="../App_Themes/aflgiftcards/panel/style.css" type="text/css" rel="stylesheet" />
+    <link href="../App_Themes/aflgiftcards/popup/style.css" type="text/css" rel="stylesheet" />
+    <link href="../App_Themes/aflgiftcards/tab/styles.css" type="text/css" rel="stylesheet" />
+    <title>
+        Giftcard Engine
+    </title>
+    <script>
+        function ShowHideHelpText() {
+            var HelpTextDiv = document.getElementById("HelpTextDiv");
+            if (HelpTextDiv.style.display == "none") HelpTextDiv.style.display = "block";
+            else HelpTextDiv.style.display = "none";
+        }
+    </script>
+    <link href="../App_Themes/theperfectgiftcard/button/style.css" type="text/css" rel="stylesheet" />
+    <link href="../App_Themes/theperfectgiftcard/css/styles.css" type="text/css" rel="stylesheet" />
+    <link href="../App_Themes/theperfectgiftcard/css/styles_log.css" type="text/css" rel="stylesheet" />
+    <link href="../App_Themes/theperfectgiftcard/Default.css" type="text/css" rel="stylesheet" />
+    <link href="../App_Themes/theperfectgiftcard/grid/styles.css" type="text/css" rel="stylesheet" />
+    <link href="../App_Themes/theperfectgiftcard/input/style.css" type="text/css" rel="stylesheet" />
+    <link href="../App_Themes/theperfectgiftcard/menu/style.css" type="text/css" rel="stylesheet" />
+    <link href="../App_Themes/theperfectgiftcard/navbar/style.css" type="text/css" rel="stylesheet" />
+    <link href="../App_Themes/theperfectgiftcard/panel/style.css" type="text/css" rel="stylesheet" />
+    <link href="../App_Themes/theperfectgiftcard/popup/style.css" type="text/css" rel="stylesheet" />
+    <link href="../App_Themes/theperfectgiftcard/tab/styles.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <form name="aspnetForm" method="post" action="ctrnhis.aspx" id="aspnetForm">
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+
+
+        <script src="" type="text/javascript"></script>
+        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="" />
+        <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="" />
+
+
+        <script language="javascript">
+            /*************************
+                            Ajax callback Error Handler
+                            **************************/
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandler);
+
+            function EndRequestHandler(sender, args) {
+                if (args.get_error() != undefined && args.get_error().httpStatusCode == '500') {
+                    var errorMessage = args.get_error().message
+                    args.set_errorHandled(true);
+                    alert('Unhandled error occurred while processing Ajax callback request. \n' + errorMessage);
+                    window.location.reload(); //Reload the page
+                }
+            }
+        </script>
+        <div id="centerDIV">
+            <div class="topbar"></div>
+            <div class="logo"></div>
+            <!--
+        <div class="tab-main-bar">
+            <div  class="logout">
+                <a id="ctl00_mainLogin_LoginStatus" href="javascript:__doPostBack('ctl00$mainLogin$LoginStatus$ctl02','')">Login</a>                
+            </div>         
+        </div> -->
+            <div class="content-main">
+                <div class="float-left">
+                    <span id="ctl00_lblMainHeading"></span>
+                </div>
+                <div class="help-icon"></div>
+                <div class="clear">
+                </div>
+                <div class="content-right">
+                    <div id="HelpTextDiv" style="display:none">
+
+                    </div>
+                    <div id="ctl00_upnlMain">
+
+
+
+                    </div>
+
+
+                    <script language="javascript">
+                        function Page(id) {
+                            //window.document.forms[1].hdnpageid.value = id;
+                            var hdnpagetxt = document.getElementById('ctl00_DefaultContent_hdnpageid');
+                            hdnpagetxt.value = id;
+                            // alert(id);
+                            return true;
+                        }
+                    </script>
+
+
+                    <table height="100%" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+                        <tbody>
+                            <tr>
+                                <td valign="top" align="left">
+
+
+                                    <div id="menu1">
+                                        <ul>
+
+                                            <li class=menuselected>
+                                                <h3>Transaction History</h3>
+                                            </li>
+
+
+                                            <li class=menu>
+                                                <A class=menu href="../index.aspx?opt=logoff">Log out</A>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </td>
+                                <td valign="top" align="left">
+                                    <table width="100%">
+                                        <tr>
+                                            <td>
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tr>
+                                                        <td class="sp" colspan="2">
+                                                            <img height="3" src="" width="1" border="0">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="header" colspan="2">
+                                                            Transaction History
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="sp" colspan="2">
+                                                            <img height="20" src="" width="1" border="0">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="accinfob" height="16">
+                                                            Card number:&nbsp;&nbsp;
+                                                        </td>
+                                                        <td class="accinfon$" align="right" height="16">
+                                                            <span id="ctl00_DefaultContent_lblMembershipNumber">50211234567890</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="account-number">
+                                                        <td class="accinfob" height="16">
+                                                            Account number:&nbsp;&nbsp;
+                                                        </td>
+                                                        <td class="accinfon$" align="right" height="16">
+                                                            <span id="ctl00_DefaultContent_lblAccountNumber">000000000</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="loads-to-date">
+                                                        <td class="accinfob">
+                                                            Loads to date:&nbsp;&nbsp;
+                                                        </td>
+                                                        <td class="accinfon$" align="right">
+                                                            <span id="ctl00_DefaultContent_lblcardvalue">$100.00 </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="purchases-to-date">
+                                                        <td class="accinfob">
+                                                            Purchases to date:&nbsp;&nbsp;
+                                                        </td>
+                                                        <td class="accinfon$" align="right">
+                                                            <span id="ctl00_DefaultContent_lblpurchasestodate">-$54.32 </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="accinfob">
+                                                            Available Balance:&nbsp;&nbsp;
+                                                        </td>
+                                                        <td class="accinfon$" align="right">
+                                                            <span id="ctl00_DefaultContent_lblavailablebalance">$12.34 </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="purchased-store-location">
+                                                        <td class="accinfob">
+                                                            Purchased Store Location :&nbsp;&nbsp;
+                                                        </td>
+                                                        <td class="accinfon$" align="right">
+                                                            <span id="ctl00_DefaultContent_lblStoreLocation"></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="card-purchased-date">
+                                                        <td class="accinfob">
+                                                            Card Purchased Date:&nbsp;&nbsp;
+                                                        </td>
+                                                        <td class="accinfon$" align="right">
+                                                            <span id="ctl00_DefaultContent_lblCardPurchasedDate">1 Jan 2018</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="card-expiry-date">
+                                                        <td class="accinfob">
+                                                            Card Expiry Date:&nbsp;&nbsp;
+                                                        </td>
+                                                        <td class="accinfon$" align="right">
+                                                            <span id="ctl00_DefaultContent_lblCardExpiryDate">1 Jan 2021</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="sp" colspan="2">
+                                                            <img height="15" src="" width="1" border="0">
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <!-- <IMG src="images/visa card.jpg" align="right" border="0"> -->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div id="hasDataPanel">
+                                        <table cellspacing="1" cellpadding="5" width="100%" border="0">
+                                            <tr>
+                                                <div id="pageLoadDataPanel">
+                                                </div>
+                                                <td class="copy">
+                                                    Ten most recent transactions, sorted by date. Click on the column name to re-sort the information.
+                                                    <input name="ctl00$DefaultContent$hdnpageid" type="hidden" id="ctl00_DefaultContent_hdnpageid" value="1" />
+                                                    <input name="ctl00$DefaultContent$hdnsortid" type="hidden" id="ctl00_DefaultContent_hdnsortid" value="1" />
+                                                    <input name="ctl00$DefaultContent$hdnsortdir" type="hidden" id="ctl00_DefaultContent_hdnsortdir" value="1" />
+
+                                                </td>
+                                                <div>
+                                                </div>
+                                            </tr>
+                                        </table>
+                                        <table cellspacing="1" cellpadding="5" width="100%" border="0">
+                                            <tr>
+                                                <td class="formheader" colspan="3">
+                                                    Redemption Statement
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table class="sortable" id="dgPointsStatement" style="border-top-width: 0px; border-left-width: 0px;
+                            border-left-color: white; border-bottom-width: 0px; border-bottom-color: white;
+                            width: 100%; border-top-color: white; border-right-width: 0px; border-right-color: white" bordercolor="white"
+                                            cellspacing="1" cellpadding="5" rules="all" border="0">
+                                            <tr>
+                                                <td class="formcolumnlabel" height="20">
+                                                    Date / Time
+                                                </td>
+                                                <td class="formcolumnlabel">
+                                                    Transaction Details
+                                                </td>
+                                                <td class="formcolumnlabel">
+                                                    Description
+                                                </td>
+                                                <td class="formcolumnlabel-right">
+                                                    Amount
+                                                </td>
+                                                <td class="formcolumnlabel-right">
+                                                    Balance
+                                                </td>
+                                            </tr>
+                                            <div id="ctl00_DefaultContent_divDatarows">
+                                                <tr>
+                                                    <TD class="forminfo1" height="20">1 Jan 2018 12:04:45 PM</TD>
+                                                    <TD class="forminfo1" height="20">Store Address</TD>
+                                                    <TD class="forminfo1">Refund - Store Address</TD>
+                                                    <TD class="forminfo1-right">$100.00&nbsp;</TD>
+                                                    <TD class="forminfo1-right">$100.00&nbsp;</TD>
+                                                </tr>
+                                                <tr class=forminfo2>
+                                                    <TD class="forminfo2" height="20">2 Jan 2018 07:50:53 PM</TD>
+                                                    <TD class="forminfo2" height="20">Store A</TD>
+                                                    <TD class="forminfo2">Purchase - Store A</TD>
+                                                    <TD class="forminfo2-right">$12.34-</TD>
+                                                    <TD class="forminfo2-right">$56.78&nbsp;</TD>
+                                                </tr>
+                                            </div>
+                                            <div id="ctl00_DefaultContent_divPaging">
+                                            </div>
+                                            <tfoot>
+                                                <tr>
+                                                    <td class="buttonleft" colspan="4">
+                                                        <input type="submit" name="ctl00$DefaultContent$cmdFirst" value=" &lt;&lt; " id="ctl00_DefaultContent_cmdFirst" disabled="disabled"
+                                                            class="buttonpage" OnClick="javascript:Page('1');" />&nbsp;
+                                                        <input type="submit" name="ctl00$DefaultContent$cmdPrevious" value=" &lt; " id="ctl00_DefaultContent_cmdPrevious" disabled="disabled"
+                                                            class="buttonpage" OnClick="javascript:Page('1');" />&nbsp;
+                                                        <input type="submit" name="ctl00$DefaultContent$cmdNext" value=" > " id="ctl00_DefaultContent_cmdNext" disabled="disabled"
+                                                            class="buttonpage" OnClick="javascript:Page('1');" />&nbsp;
+                                                        <input type="submit" name="ctl00$DefaultContent$cmdLast" value=" >> " id="ctl00_DefaultContent_cmdLast" disabled="disabled"
+                                                            class="buttonpage" OnClick="javascript:Page('1');" />
+                                                    </td>
+                                                    <td class="button2">
+                                                        <span id="ctl00_DefaultContent_lblPageCount">1 of 1</span>
+                                                    </td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                    <table cellspacing="1" cellpadding="5" width="100%" border="0">
+                                        <tr>
+                                            <td class="sp">
+                                                <img height="1" src="" width="1" border="0">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="mainside" valign="top" align="left">
+                                    <img height="1" src="" width="10">
+                                </td>
+                                <td class="mainside" valign="top" align="left">
+                                </td>
+                            </tr>
+                            <tr class="bottomIMG">
+                                <td height="26" colspan="6" align="left" valign="top">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </TBODY>
+
+                    </table>
+
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+
+            <div class="footer-main">
+                <div id="footer-line">
+                    <ul>
+                        <li>
+                            <a href='http://theperfectgiftcard.com.au/privacy' target="_blank">Privacy</a>
+                        </li>
+                        <li>
+                            <a href='http://theperfectgiftcard.com.au/termsandconditions' target="_blank">Terms and Conditions</a>
+                        </li>
+                        <li>
+                            <a href='http://theperfectgiftcard.com.au/faq' target="_blank">FAQ</a>
+                        </li>
+                        <li>
+                            <a href='http://theperfectgiftcard.com.au/contactus' target="_blank">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="copyright">© Copyright 2009 - Indue Limited.</div>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+
+
+        <script type="text/javascript">
+            //<![CDATA[
+            Sys.Application.initialize();
+            //]]>
+        </script>
+    </form>
+</body>
+
+</html>

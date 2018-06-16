@@ -1,0 +1,202 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<HEAD id="Head">
+    <link href="App_Themes/aflgiftcards/button/style.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/aflgiftcards/css/styles.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/aflgiftcards/css/styles_log.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/aflgiftcards/Default.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/aflgiftcards/grid/styles.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/aflgiftcards/input/style.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/aflgiftcards/menu/style.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/aflgiftcards/navbar/style.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/aflgiftcards/panel/style.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/aflgiftcards/popup/style.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/aflgiftcards/tab/styles.css" type="text/css" rel="stylesheet" />
+    <title>
+        Welcome to the Card Engine
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="MSHTML 6.00.2900.2802" name="GENERATOR" />
+    <meta content="JavaScript" name="vs_defaultClientScript" />
+    <script language="Javascript" src="scripts/default.js" type="text/javascript"></script>
+    <script language="JavaScript" src="scripts/jsbn.js" type="text/javascript"></script>
+    <script language="JavaScript" src="scripts/prng4.js" type="text/javascript"></script>
+    <script language="JavaScript" src="scripts/rng.js" type="text/javascript"></script>
+    <script language="JavaScript" src="scripts/rsa.js" type="text/javascript"></script>
+    <script language="JavaScript" src="scripts/base64.js" type="text/javascript"></script>
+    <script language="JavaScript" src="scripts/login.js" type="text/javascript"></script>
+    <script language="JavaScript" type="text/javascript">
+        function pausecomp(millis) {
+            var date = new Date();
+            var curDate = null;
+            do {
+                curDate = new Date();
+            } while (curDate - date < millis);
+        }
+
+        function openWindow(pURL) {
+            strURL = pURL;
+            popWindow = window.open(strURL, 'newWindow',
+                'width=754, height=454,resizable=1,menubar=1,toolbar=1,scrollbars=1,status=1');
+            popWindow.focus();
+        }
+    </script>
+    <script language="JavaScript" type="text/JavaScript">
+        <!--
+        function MM_preloadImages() { //v3.0
+
+         fieldCursor('frmLogin','txtCardNumber')	;
+          var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+            var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+            if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+        }
+
+        function MM_swapImgRestore() { //v3.0
+          var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+        }
+
+        function MM_findObj(n, d) { //v4.01
+          var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+            d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+          if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+          for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+          if(!x && d.getElementById) x=d.getElementById(n); return x;
+        }
+
+        function MM_swapImage() { //v3.0
+          var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+           if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+        }
+        //-->
+    </script>
+    <link href="App_Themes/theperfectgiftcard/button/style.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/theperfectgiftcard/css/styles.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/theperfectgiftcard/css/styles_log.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/theperfectgiftcard/Default.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/theperfectgiftcard/grid/styles.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/theperfectgiftcard/input/style.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/theperfectgiftcard/menu/style.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/theperfectgiftcard/navbar/style.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/theperfectgiftcard/panel/style.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/theperfectgiftcard/popup/style.css" type="text/css" rel="stylesheet" />
+    <link href="App_Themes/theperfectgiftcard/tab/styles.css" type="text/css" rel="stylesheet" />
+</HEAD>
+
+<body bottommargin="0" bgcolor="#333333" leftMargin="0" topMargin="0" marginheight="0" marginwidth="0" onload="fieldCursor('frmLogin','txtCardNumber')">
+    <table width=851 align=center cellpadding="10" cellspacing="0" bgcolor="#333333" class="headerborder">
+        <tr>
+            <td colspan="3">
+                <img src="images/spacer.gif" width="304" height="100">
+            </td>
+        </tr>
+    </table>
+    <form name="frmLogin" method="post" action="index.aspx" id="frmLogin">
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJODY3MDYzNzgzD2QWAgIDD2QWBmYPFgQeB1Zpc2libGVnHglpbm5lcmh0bWwFsgE8dHI+PHRkIGNsYXNzPSJlcnJvckhlYWRlciIgaWQ9ImVycm9ySGVhZGVyIiBjb2xTcGFuPSIyIj5FcnJvcjwvdGQ+PC90cj48dHI+PHRkIGNsYXNzPSJpbnB1dDEiIGlkPSJodG1sdGRFcnJvckRlc2NyaXB0aW9uIiBjb2xTcGFuPSIyIiA+SW52YWxpZCBjYXJkIG51bWJlciBvciBwYXNzd29yZC48L3RkPjwvdHI+ZAIDDw9kFgIeB29uY2xpY2sFFXJldHVybiBnZXRwYXNzd29yZCgpO2QCBg8WAh8AaGRkuZr7HTWWOoraSfoutxXv2QsBE4E="
+        />
+
+        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="5898F960" />
+        <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBgLXzKrBDgLi0uqnCgK1qbSRCwKFoZPNAwLQvbH7BAL8yZzMCQaFLvGUZ/kCJwupFNi1S8HcxUK2"
+        />
+        <table cellspacing="0" cellpadding="0" width="851" height="400" align="center" bgcolor="#ffffff" border="0" class="bottomIMG">
+            <tr>
+                <TD vAlign=middle class="shadowBG" align="center">
+                    <table width="60%" border="0" cellspacing="0" cellpadding="5" align=center>
+                        <tr>
+                            <td align="center" class="hometextbold">
+                                <strong> The Perfect Gift Card - Your online account </strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <TABLE width="265" border="0" cellPadding="0" cellSpacing="0">
+                                    <TBODY>
+                                        <TR>
+                                            <TD vAlign="top" width="330">
+                                                <span class="textBlue">
+                                                    » Obtain your Gift Card balance
+                                                    <br />» Review your Gift Card purchases
+                                                    <br />» Review your Gift Card details
+                                                </span>
+                                                <br /> </TD>
+                                        </TR>
+                                    </TBODY>
+                                </TABLE>
+                            </td>
+                        </tr>
+                    </table>
+                    <img src="images/LoadingProgressBar.gif" id='imgWait' style='display:none' alt="Loading..." width="65" height="13" align="absmiddle">
+                    <br>
+                    <br>
+                    <table cellspacing="0" cellpadding="5" width="250" align="center" border="0" class="loginborder">
+                        <tr>
+                            <td bgcolor="#333333">
+                                <img height="18" src="images/login.gif" width="130">
+                            </td>
+                        </tr>
+                        <!-- start of login -->
+                        <tr>
+                            <td height="130">
+
+                                <table cellspacing="0" cellpadding="5" width="250" border="0">
+                                    <div id="htmldivErrorPanel">
+                                        <tr>
+                                            <td class="errorHeader" id="errorHeader" colSpan="2">Error</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="input1" id="htmltdErrorDescription" colSpan="2">Invalid card number or password.</td>
+                                        </tr>
+                                    </div>
+                                    <tr>
+                                        <td width="43%">
+                                            <span class="style3">Card Number </span>
+                                        </td>
+                                        <td width="57%">
+                                            <input name="txtCardNumber" type="text" id="txtCardNumber" class="css" maxlength="19"
+                                                autocomplete="off" size="25" value="502125100292584250" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="style3">Card&nbsp;PIN/PAC </span>
+                                        </td>
+                                        <td>
+                                            <input name="txtPassword" type="password" id="txtPassword" class="css" maxlength="12"
+                                                autocomplete="off" size="25" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>
+                                            <input type="submit" name="cmdLogin" value=" Log in " onclick="return getpassword();" id="cmdLogin" class="button" />
+                                            <input name="hdnrequest" type="hidden" id="hdnrequest" value="65164bcfcb07c427e5a1c2557baf9abb05f9f47f530ed89e6193b13f1c685af8fdde38b8727284241ed0ec40762f37792ace45185ae2cb53b86087b4cc82022a157a00b464d49f3a5869ce4e0e84c66c7c15c7f9b9b4c9b8e7f7132cdfdab900aebec97bdbdb3fddce0a577e4bb179f67e287e0dd6809ff7442f28851cb456f2"
+                                            />
+                                            <input name="hdnrandomnumber" type="hidden" id="hdnrandomnumber" value="7464663221746466322174646632217464663221"
+                                            />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <span class="style3"></span>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </td>
+                        </tr>
+                        <!-- end of login -->
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script language="javascript">
+        <!--
+        function fieldCursor(pForm, pField) {
+            document[pForm][pField].focus();
+        }
+        //-->
+    </script>
+</body>
+
+</HTML>
