@@ -45,7 +45,7 @@ func main() {
 		log.Fatal(err)
 	}
 	log.Printf("Card No: %v", card.CardNo)
-	log.Printf("Avalable Balance: %v", card.AvailableBalance)
+	log.Printf("Available Balance: %v", card.AvailableBalance)
 	log.Printf("HTTP Status Code: %v", resp.StatusCode)
 }
 ```
