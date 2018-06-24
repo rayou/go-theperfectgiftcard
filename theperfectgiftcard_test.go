@@ -143,6 +143,23 @@ func TestGetCard(t *testing.T) {
 	}
 }
 
+func TestConnectionErrro(t *testing.T) {
+	// setup
+	server := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {}))
+	server.Close() // immediately close the server to force connection error
+
+	c, err := NewClient()
+	testValue(t, true, err == nil)
+
+	baseURL, _ := url.Parse(server.URL)
+	c.BaseURL = baseURL
+
+	card, resp, err := c.GetCard(cardNo, pin)
+	testValue(t, true, err != nil)
+	testValue(t, true, resp.Body == nil)
+	testValue(t, &Card{}, card)
+}
+
 func TestGetCardWithIncorrectPin(t *testing.T) {
 	// prepare
 	html := loadFixture("incorrect_cardno_or_pin")

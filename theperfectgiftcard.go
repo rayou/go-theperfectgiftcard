@@ -145,6 +145,11 @@ func (c *Client) GetCard(cardNo string, pin string) (*Card, *Response, error) {
 		response = &Response{Response: r}
 	})
 
+	co.OnError(func(r *colly.Response, e error) {
+		err = e
+		response.Response = r
+	})
+
 	body["txtCardNumber"] = cardNo
 	body["hdnrequest"] = fmt.Sprintf("%x", encryptedPin)
 	co.Post(c.BaseURL.String(), body)
