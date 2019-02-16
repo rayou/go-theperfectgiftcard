@@ -1,8 +1,11 @@
+[donation]: https://donorbox.org/rayou?amount=10
+
 # go-theperfectgiftcard
 
 [![GoDoc](https://godoc.org/github.com/rayou/go-theperfectgiftcard?status.svg)](https://godoc.org/github.com/rayou/go-theperfectgiftcard)
 [![Go Report Card](https://goreportcard.com/badge/github.com/rayou/go-theperfectgiftcard)](https://goreportcard.com/report/github.com/rayou/go-theperfectgiftcard)
 [![Coverage Status](https://coveralls.io/repos/github/rayou/go-theperfectgiftcard/badge.svg?branch=master)](https://coveralls.io/github/rayou/go-theperfectgiftcard?branch=master)
+[![](https://img.shields.io/badge/Donate-Donorbox-green.svg)][donation]
 
 **go-theperfectgiftcard** is a go package that parses [The Perfect Gift Card](https://giftcards.indue.com.au/theperfectgiftcard/) website for your gift card summary and transaction history. 
 
@@ -58,6 +61,10 @@ PRs are welcome.
 ## Author
 
 Ray Ou - yuhung.ou@live.com
+
+# Donation
+
+[![](https://d1iczxrky3cnb2.cloudfront.net/button-small-green.png)][donation]
 
 ## License
 
